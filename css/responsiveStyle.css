@@ -1,0 +1,11 @@
+@media only screen and (max-width: 390px) {
+    #landing-image {
+        background: url(../images/landing-logo-responsive.png);
+        /* width: ; */
+        width: 268.58px;    
+        /* position: relative; */
+        height: 349px;
+        /* background-repeat: no-repeat; */
+        margin: auto;
+    }
+}
