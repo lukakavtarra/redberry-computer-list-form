@@ -5,6 +5,7 @@
 
 * {
     font-family: HelveticaNeue;
+    margin: 0;
 }
 #landing-image {
     background: url(../images/landing-logo.png);
@@ -19,6 +20,8 @@
     margin: 79px 0;
 }
 
+/* Btn Styling */
+
 #landing-anchors {
     display: grid;
     justify-items: center;
@@ -26,13 +29,73 @@
 }
 
 #landing-anchors a {
+    width: 208px;
+    padding: 18px 82px;
+    margin-top: 26px;
+}
+
+.nextButton {
+    padding: 18px 45.5px;
+    float: right;
+}
+
+.btn {
     text-decoration: none;
     background-color: #62A1EB;
     color: white;
-    width: 208px;
     font-size: 20px;
-    padding: 18px 82px;
     border-radius: 8px;
     text-align: center;
-    margin-top: 26px;
+
+}
+
+.btn:hover {
+    background-color: #317AD0;
+}
+
+.btn:active {
+    background-color: #1A5DAB;
+}
+
+
+
+form {
+    background-color: #fefefe;
+    margin: 0 347px;
+    padding: 0 9rem;
+    height: 840px;
+    border-radius: 18px;
+}
+
+.existingPages {
+    display: flex;
+
+    justify-content: center;
+}
+.existingPages * {
+    margin: 40px 66px 42px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+.active {
+    text-decoration: underline;
+    text-underline-offset: 17px;
+    text-decoration-thickness: 0.1px;
+}
+
+.requirement {
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: 500;
+    display: inherit;
+}
+
+.redberry-logo-circle {
+    display: block;
+    margin: 20px auto 0;
 }

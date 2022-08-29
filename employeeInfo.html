@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsiveStyle.css">
+    <link rel="stylesheet" href="./css/employeeInfo.css">
+</head>
+<body>
+    <div class="existingPages">
+        <p class="active">თანამშრომლების ინფო</p>
+        <p>ლეპტოპის მახასიათებელი</p>
+    </div>
+   
+    <form action="">
+        <div id="fullName">
+            <div class="name">
+                <label for="name">სახელი</label>
+                <input id="name" title="name" name="name" type="text" placeholder="გრიშა" required/>
+                <label class="requirement" for="name">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+            </div>
+            <div class="surname">
+                <label for="surname">გვარი</label>
+                <input id="surname" title="surname" name="surname" type="text" placeholder="ბაგრატიონი" required/>
+                <label class="requirement" for="surname">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+            </div>
+
+        </div>
+        <div class="selectDiv" id="selectDiv">
+            <p id="teams" onClick='teamsSelect()'>თიმი</p> 
+        </div>
+        <div class="selectDiv"  id="positionDiv">
+            <p id="position">პოზიცია</p> 
+        </div>
+
+        <label for="email">მეილი</label>
+        <input id="email" class="input" title="email" name="email" type="email" placeholder="grisha666@redberry.ge" required/>
+        <label class="requirement" for="email">უნდა მთავრდებოდეს @redberry.ge-ით</label>
+
+        <label for="phone">ტელეფონის ნომერი</label>
+        <input id="phoneNumber" class="input" title="phone" name="phone" type="email" placeholder="+995 598 00 07 01" required/>
+        <label class="requirement" for="email">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</label>
+
+        <a class="nextButton btn" href="#">შემდეგი</a>
+    </form>
+
+    <img src="./images/redberry-logo-circle.png" class="redberry-logo-circle" alt="redberry-logo-circle">
+
+</body>
+<script src="./js/employeeInfo.js"></script>
+</html>

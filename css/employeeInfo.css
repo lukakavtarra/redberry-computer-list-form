@@ -1,0 +1,62 @@
+body {
+    background-color: #F6F6F6;
+}
+
+input {
+    display: inherit;
+    padding-left: 16px;
+    border: 1px solid #8AC0E2;
+    border-radius: 8px;
+    height: 50px;
+
+}
+
+.input {
+    width: 98%;
+    height: 60px;
+    margin: 10px 0;
+}
+#fullName {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#fullName * {
+    margin: 10px 20px;
+}
+
+#fullName input {
+    width: 400px;
+}
+
+#teamList,
+#positionList {
+
+    box-shadow: 0px 4px 34px 0px rgb(0 0 0 / 25%);
+    background-color: white;
+}
+
+.teams:hover {
+    background: rgba(231, 240, 248, 1);
+    cursor: pointer;
+}
+
+.selectDiv {
+    width: 98%;
+    height: 50px;
+    border: 1px solid  rgba(235, 235, 235, 1);
+    border-radius: 8px;
+    background: rgba(235, 235, 235, 1);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 52px 0;
+    cursor: pointer;
+}
+.selectDiv p {
+    padding: 1rem 16px;
+}
+.selectDiv div {
+    position: relative;
+    padding: 7px 15px;
+}
