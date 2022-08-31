@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsiveStyle.css">
     <link rel="stylesheet" href="./css/employeeInfo.css">
+    <!-- Fa icons -->
+    <script
+    src="https://kit.fontawesome.com/6ba073b965.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
+    <div class="goBack">
+       <a href="./index.html"><i class="fa-solid fa-chevron-left"></i></a> 
+    </div>
     <div class="existingPages">
         <p class="active">თანამშრომლების ინფო</p>
         <p>ლეპტოპის მახასიათებელი</p>
@@ -20,12 +28,12 @@
         <div id="fullName">
             <div class="name">
                 <label for="name">სახელი</label>
-                <input id="name" title="name" name="name" type="text" placeholder="გრიშა" required/>
+                <input id="name" title="name" data-pattern = 'georgianRequired' name="name" type="text"  minlength="2" placeholder="გრიშა" required/>
                 <label class="requirement" for="name">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
             </div>
             <div class="surname">
                 <label for="surname">გვარი</label>
-                <input id="surname" title="surname" name="surname" type="text" placeholder="ბაგრატიონი" required/>
+                <input id="surname" title="surname" data-pattern = 'georgianRequired' name="surname" type="text"  minlength="2" placeholder="ბაგრატიონი" required/>
                 <label class="requirement" for="surname">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
             </div>
 
@@ -38,18 +46,20 @@
         </div>
 
         <label for="email">მეილი</label>
-        <input id="email" class="input" title="email" name="email" type="email" placeholder="grisha666@redberry.ge" required/>
+        <input id="email" class="input" title="email" name="email" pattern=".+@redberry\.ge" type="email" placeholder="grisha666@redberry.ge" required/>
         <label class="requirement" for="email">უნდა მთავრდებოდეს @redberry.ge-ით</label>
 
         <label for="phone">ტელეფონის ნომერი</label>
-        <input id="phoneNumber" class="input" title="phone" name="phone" type="email" placeholder="+995 598 00 07 01" required/>
-        <label class="requirement" for="email">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</label>
+        <input id="phoneNumber" class="input" title="phone" name="phone" type="tel" placeholder="+995 598 00 07 01" required/>
+        <label class="requirement" for="phone">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</label>
 
-        <a class="nextButton btn" href="#">შემდეგი</a>
+        <!-- <input title="imagefile" type="file" name="imagefile" id="imagefile"> -->
+        <a onclick="submitPersonalInfo()" class="nextButton btn" href="#">შემდეგი</a>
     </form>
 
     <img src="./images/redberry-logo-circle.png" class="redberry-logo-circle" alt="redberry-logo-circle">
 
 </body>
 <script src="./js/employeeInfo.js"></script>
+<script src="./js/postApi.js"></script>
 </html>
