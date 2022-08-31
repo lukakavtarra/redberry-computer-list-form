@@ -45,7 +45,7 @@ input {
 .selectDiv {
     width: 98%;
     height: 50px;
-    border: 1px solid  rgba(235, 235, 235, 1);
+    border: 1px solid rgba(235, 235, 235, 1);
     border-radius: 8px;
     background: rgba(235, 235, 235, 1);
     font-weight: 500;
